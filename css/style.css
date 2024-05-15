@@ -1,0 +1,113 @@
+:root{
+    --title: "Playfair Display", serif;
+    --main: "Montserrat", sans-serif;
+    --second: "Poppins", sans-serif;
+    --quote: "Merriweather", serif;
+    --author: "Lato", sans-serif;
+    --text-light: #222;
+    --bg-light: #eaeaea;
+    --text-dark: #eaeaea;
+    --bg-dark: #1d1d1d;
+}
+*{
+    transition: .5s;
+}
+header{
+    min-height: 100vh;
+    background-color: var(--bg-light);
+}
+
+h1{
+    font-family: var(--title);
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+h2{
+    font-family: var(--main);
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+#dark-mode-btn{
+    top: 4%;
+    right: 2%;
+    width: 80px;
+    padding: 5px;
+    border-radius: 100px;
+    background-color: #bbb;
+    box-shadow: inset 0px 0px 8px 5px #5555;
+    transition: .5s;
+    cursor: pointer;
+}
+#dark-mode{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-size: 20px;
+    transition: .5s;
+    color: black;
+    float: left;
+}
+#dark-mode i{
+    transition: 0s;
+}
+#dark-mode:hover{
+    background-color: #d8d8d8;
+}
+.mybtn{
+    font-family: var(--second);
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #66B10B;
+    color: #efd;
+    border-radius: 100px 100px 10px 100px;
+    transition: .5s;
+    border: none;
+}
+.mybtn:hover{
+    background-color: #428B10;
+    color: #efd;
+}
+#quote {
+    font-family: var(--quote);
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--text-light);
+}
+#author{
+    font-family: var(--author);
+    font-size: 28px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.dark{
+    background-color: var(--bg-dark);
+}
+.dark h1, .dark h2, .dark #author, .dark #quote{
+    color: var(--text-dark);
+}
+.dark #dark-mode{
+    background-color: #222;
+    color: yellow;
+    transform: translateX(38px);
+}
+.dark #dark-mode:hover{
+    background-color: #333;
+}
+.dark #dark-mode-btn{
+    background-color: #666;
+    box-shadow: inset 0px 0px 8px 5px #2225;
+
+}

@@ -1,0 +1,44 @@
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    #dark-mode-btn {
+        width: 50px;
+        padding: 3px;
+    }
+
+    #dark-mode {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mybtn {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #quote {
+        font-size: 22px;
+    }
+
+    #author {
+        font-size: 14px;
+        letter-spacing: 1.2px;
+    }
+
+    .dark #dark-mode {
+        transform: translateX(24px);
+    }
+}
